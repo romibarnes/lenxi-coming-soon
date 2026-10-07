@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LENXI · Salon-level hair care, at home</title>
+<meta name="description" content="LENXI is a European hair-care brand creating a weekly hair ritual that brings the salon home. Coming 2027.">
+<link rel="canonical" href="https://lenxi.co/">
+<meta name="theme-color" content="#FAF6EF">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LENXI">
+<meta property="og:title" content="LENXI · Salon-level hair care, at home">
+<meta property="og:description" content="A European hair-care brand creating a weekly hair ritual that brings the salon home. Coming 2027.">
+<meta property="og:url" content="https://lenxi.co/">
+<meta property="og:image" content="https://lenxi.co/assets/lenxi-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The LENXI kit: a striped burgundy and cream towel, a treatment bottle and a sealed envelope in a terracotta box">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LENXI · Salon-level hair care, at home">
+<meta name="twitter:description" content="A European hair-care brand creating a weekly hair ritual that brings the salon home. Coming 2027.">
+<meta name="twitter:image" content="https://lenxi.co/assets/lenxi-og.jpg">
+
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/lenxi-kit.jpg">
+
+<style>
+  @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/cormorant-garamond-latin-400-normal.woff2) format("woff2")}
+  @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2")}
+  @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/inter-latin-400-normal.woff2) format("woff2")}
+  @font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/inter-latin-500-normal.woff2) format("woff2")}
+  :root{
+    --cream:#FAF6EF; --ink:#2B2B2B; --muted:#6B655D; --burgundy:#7A1F2B; --gold:#9A7B3F;
+    --rule:rgba(154,123,63,.35);
+    --serif:"Cormorant Garamond","EB Garamond",Georgia,"Times New Roman",serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --gutter:clamp(20px,5vw,64px);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  img{display:block;width:100%;height:auto}
+  a{color:inherit}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 var(--gutter)}
+  .narrow{max-width:720px}
+
+  /* Header */
+  header{padding:28px 0}
+  header .wrap{display:flex;align-items:center;justify-content:space-between}
+  .wordmark{font-family:var(--serif);font-weight:500;font-size:26px;letter-spacing:.42em;margin-right:-.42em;color:var(--gold);text-decoration:none;line-height:1}
+  .nav-link{font-size:12px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--ink);padding:8px 0;border-bottom:1px solid transparent;transition:border-color .2s}
+  .nav-link:hover{border-color:var(--gold)}
+
+  /* Shared type */
+  .label{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  h1,h2{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:-.005em}
+  h1{font-size:clamp(44px,8vw,96px)}
+  h2{font-size:clamp(32px,4.4vw,52px)}
+  p.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:34em}
+  .rule{height:1px;background:var(--rule);border:0}
+  .caption{font-size:12px;color:var(--muted);letter-spacing:.04em;margin-top:12px}
+
+  /* Hero */
+  .hero{text-align:center;padding:clamp(48px,9vw,120px) 0 clamp(40px,6vw,72px)}
+  .hero h1{margin:22px auto 26px;max-width:11em}
+  .hero p.lead{margin:0 auto}
+  .hero-img{margin-top:clamp(40px,6vw,72px)}
+  .hero-img img{border-radius:2px}
+  @media(max-width:600px){.hero-img img{aspect-ratio:5/4;object-fit:cover}}
+
+  /* Sections */
+  section{padding:clamp(56px,8vw,112px) 0}
+  .split{display:grid;gap:28px}
+  @media(min-width:860px){.split{grid-template-columns:1fr 1.6fr;gap:80px;align-items:start}}
+  .split h2{margin-top:16px}
+  .body p{font-size:17px;max-width:36em}
+  .body p+p{margin-top:1.1em}
+
+  .pair{display:grid;gap:16px}
+  @media(min-width:760px){.pair{grid-template-columns:1fr 1fr;gap:24px}}
+  .pair img{border-radius:2px}
+  .mood{padding-top:0}
+
+  .partners{text-align:center}
+  .partners h2{margin:16px auto 28px;max-width:12em}
+  .partners p{max-width:34em;margin:0 auto;font-size:17px}
+  .btn{display:inline-block;margin-top:40px;background:var(--burgundy);color:var(--cream);text-decoration:none;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:18px 40px;border-radius:999px;transition:background .2s}
+  .btn:hover{background:#621822}
+  .btn:focus-visible,.nav-link:focus-visible,.email:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+
+  .contact{text-align:center}
+  .contact .name{font-family:var(--serif);font-size:clamp(26px,3vw,34px);margin-top:18px}
+  .email{display:inline-block;margin-top:6px;font-size:17px;text-decoration:none;color:var(--burgundy);border-bottom:1px solid var(--rule);padding-bottom:2px}
+  .email:hover{border-color:var(--burgundy)}
+
+  footer{padding:32px 0 40px;font-size:12px;color:var(--muted);letter-spacing:.06em}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+  footer a{text-decoration:none}
+  footer a:hover{color:var(--burgundy)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="wordmark" href="/" aria-label="LENXI home">LENXI</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <p class="label">Coming 2027</p>
+      <h1>Salon-level hair care, at&nbsp;home.</h1>
+      <p class="lead">LENXI is a European hair-care brand creating a weekly hair ritual that brings the salon home.</p>
+      <figure class="hero-img">
+        <img src="assets/lenxi-kit.jpg" width="1800" height="1067" fetchpriority="high"
+             alt="The LENXI kit in an open terracotta box: a striped burgundy and cream towel, a treatment bottle and a sealed envelope">
+        <figcaption class="caption">Concept imagery</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <hr class="rule" style="margin-bottom:clamp(48px,7vw,96px)">
+      <div class="split">
+        <div>
+          <p class="label">What we're building</p>
+          <h2>A weekly ritual, made beautiful.</h2>
+        </div>
+        <div class="body">
+          <p>A treatment, gentle warmth and the comfort of a towel, brought together in one weekly ritual.</p>
+          <p>A towel is what women already love wrapping their hair in. It is the one moment with hair up that feels relaxing and luxurious, and we want it to bring salon-level results home.</p>
+          <p>Designed in Europe. Developed together with our manufacturing partners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mood" aria-label="Concept imagery">
+    <div class="wrap">
+      <div class="pair">
+        <img src="assets/lenxi-ritual.jpg" width="1400" height="829" loading="lazy" decoding="async"
+             alt="A woman with long, glossy dark hair applying a treatment with a dropper, a LENXI box on the table behind her">
+        <img src="assets/lenxi-towel.jpg" width="1400" height="829" loading="lazy" decoding="async"
+             alt="A folded LENXI towel in burgundy and cream stripes with a cotton velvet border">
+      </div>
+      <p class="caption">Concept imagery</p>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="wrap narrow">
+      <hr class="rule" style="margin-bottom:clamp(48px,7vw,96px)">
+      <p class="label">For partners</p>
+      <h2>Building this together.</h2>
+      <p>We are looking for long-term manufacturing and development partners: people we can build and improve products with over time, not one-off orders. We are a small team, and we value your expertise.</p>
+      <a class="btn" href="mailto:romi@lenxi.co?subject=LENXI%20partnership">Get in touch</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap narrow">
+      <hr class="rule" style="margin-bottom:clamp(48px,7vw,96px)">
+      <p class="label">Contact</p>
+      <p class="name">Romi, Head of Product</p>
+      <a class="email" href="mailto:romi@lenxi.co">romi@lenxi.co</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 LENXI</span>
+    <a href="mailto:romi@lenxi.co">romi@lenxi.co</a>
+  </div>
+</footer>
+
+</body>
+</html>
